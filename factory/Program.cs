@@ -1,29 +1,26 @@
-﻿using System.Configuration.Assemblies;
-
 namespace factory
 {
 
-    class Program {
-        static void Main (string[]args){
-            
-        }
-    }
-
-    
-    class Animal
+    class Program
     {
-        private string race;
-        private string type;
-        private int age;
-        public Animal(string race, string type, int age)
+        static void Main(string[] args)
         {
-            this.race = race;
-            this.type = type;
-            this.age = age;
-        }
-        public string MakeSomeNoise (){
-           
+            Creator []animals = new Creator[2];
+            for (int i = 0; i <= animals.Length; i++){
+                Console.WriteLine("Jméno:");
+               string rasa =  Console.ReadLine();
+               Console.WriteLine("Druh:");
+               string druh = Console.ReadLine();
+               Console.WriteLine("Věk:");
+               int vek = Int32.Parse(Console.ReadLine());
+               Console.WriteLine("Zvuk:");
+               string zvuk = Console.ReadLine();
+            }
+            foreach (Creator animal in animals)
+            {
+                Creator zvire = animal.FactoryMethod();
+                Console.WriteLine("${zvire.rasa},{zvire.vek}, {zvire.druh}");
+            }
         }
     }
 }
-
