@@ -11,10 +11,10 @@ namespace factory
         {
             return new Animal(this.race,this.type,this.age, this.noise);
         }
-        private string race;
-        private string type;
-        private int age;
-        private string noise;
+        public string race;
+        public string type;
+        public int age;
+        public string noise;
         public Animal(string race, string type, int age, string noise)
         {
             this.race = race;
