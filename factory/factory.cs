@@ -4,7 +4,7 @@ namespace factory
 {
     abstract class Creator
     {
-        public abstract Animal FactoryMethod();
+        public abstract Animal FactoryMethod(); // Tahhle metoda na bude vyprdávat instance pro třídu Animal
     }
     class Animal : Creator{
         public override Animal FactoryMethod()
