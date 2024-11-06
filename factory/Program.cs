@@ -16,7 +16,7 @@
                Console.WriteLine("Zvuk:");
                string zvuk = Console.ReadLine();
                animals[i] = new Animal(rasa, druh, vek, zvuk); //Zapsání instance do pole zvířat
-               Console.WriteLine("Další zvíře:");
+               Console.Clear();
             }
             foreach (Creator animal in animals)
             {
